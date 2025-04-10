@@ -1,44 +1,25 @@
 #include "pch.h"
-
-Gpio getCommsLedPin() {
-	return Gpio::Unassigned;
-}
-
-Gpio getRunningLedPin() {
-	return Gpio::Unassigned;
-}
-
-Gpio getWarningLedPin() {
-	return Gpio::Unassigned;
-}
+#include "mega-uaefi.h"
+#include "hellen_meta.h"
 
 // board-specific configuration setup
 void setBoardDefaultConfiguration() {
-    // engineConfiguration->injectionPins[0] = Gpio::F13;
-    // engineConfiguration->ignitionPins[0] = Gpio::E15;
+    setMegaUaefiBoardDefaultConfiguration();
 
-//   engineConfiguration->triggerInputPins[0] = Gpio::B1;
-//	engineConfiguration->triggerInputPins[1] = Gpio::Unassigned;
+	engineConfiguration->injectionPins[0] = Gpio::MM100_MEGA_UAEFI_INJ1;
+  	engineConfiguration->injectionPins[1] = Gpio::MM100_INJ2;
+  	engineConfiguration->injectionPins[2] = Gpio::MM100_INJ3;
+  	engineConfiguration->injectionPins[3] = Gpio::MM100_INJ4;
 
-//	engineConfiguration->map.sensor.hwChannel = EFI_ADC_3;
+	engineConfiguration->ignitionPins[0] = Gpio::MM100_IGN1;
+	engineConfiguration->ignitionPins[1] = Gpio::MM100_IGN2;
+	engineConfiguration->ignitionPins[2] = Gpio::MM100_IGN3;
+	engineConfiguration->ignitionPins[3] = Gpio::MM100_IGN4;
 
-//	engineConfiguration->clt.adcChannel = EFI_ADC_1;
+    engineConfiguration->triggerInputPins[0] = Gpio::MM100_UART8_TX; // VR2 max9924 is the safer default
 
-//	engineConfiguration->iat.adcChannel = EFI_ADC_2;
+	engineConfiguration->tps1_1AdcChannel = MM100_IN_TPS_ANALOG;
+	engineConfiguration->clt.adcChannel = MM100_IN_CLT_ANALOG;
+	engineConfiguration->iat.adcChannel = MM100_IN_IAT_ANALOG;
 
-
-    	// 5.6k high side/10k low side = 1.56 ratio divider
-  //  	engineConfiguration->analogInputDividerCoefficient = 1.56f;
-
-    	// 6.34k high side/ 1k low side
-//    	engineConfiguration->vbattDividerCoeff = (6.34 + 1) / 1;
-
-//	engineConfiguration->adcVcc = 3.3f;
-
-//	engineConfiguration->clt.config.bias_resistor = 2490;
-//	engineConfiguration->iat.config.bias_resistor = 2490;
-
-
-	// Battery sense on PA0
-//	engineConfiguration->vbattAdcChannel = EFI_ADC_0;
 }
