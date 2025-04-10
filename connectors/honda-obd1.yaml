@@ -10,7 +10,12 @@ pins:
     type: inj
 
   - pin: A2
+    class: outputs
+    meta: MM100_INJ4
+    ts_name: ___ INJ_4
     function: Injector 4
+    color: orange/brown
+    type: inj
 
   - pin: A3
     function: Injector 2
@@ -89,6 +94,8 @@ pins:
 
   - pin: A21
     function: ICM Coil Control
+    ts_name: ___ ICM Coil Control
+    meta: MM100_IGN7
     class: outputs
     type: ls
 
@@ -184,6 +191,11 @@ pins:
 
   - pin: D11
     function: Throttle Position Sensor
+    meta: MM100_IN_TPS_ANALOG
+    class: analog_inputs
+    ts_name: ___ TPS1
+    type: av
+    color: green
 
   - pin: D12
     function: OEM Analog Input EGR Lift Sensor / rusEFI Aux Analog Input
@@ -191,6 +203,11 @@ pins:
 
   - pin: D13
     function: Coolant Sensor
+    class: analog_inputs
+    meta: MM100_IN_CLT_ANALOG
+    ts_name: ___ CLT Coolant
+    type: at
+    color: grey
 
   - pin: D14
     function: OEM o2 UNUSED / rusEFI Aux Analog Input
@@ -200,6 +217,10 @@ pins:
 
   - pin: D17
     function: MAP Sensor
+    class: analog_inputs
+    meta: MM100_IN_MAP1_ANALOG
+    ts_name: MAP
+    color: yellow
 
   - pin: D18
     function: TCM Output +5V
