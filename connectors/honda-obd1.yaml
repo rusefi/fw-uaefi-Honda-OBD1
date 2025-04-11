@@ -119,11 +119,14 @@ pins:
     function: Power Ground
     color: black
     type: gnd
+
   - pin: A25
     function: Ignition Switch / Battery Voltage Analog Input
     class: analog_inputs
     color: red
+    type: 12v
     ts_name: ___ Voltage From Key
+
   - pin: A26
     function: Logic Ground
     color: black
