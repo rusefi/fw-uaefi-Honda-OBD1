@@ -43,6 +43,7 @@ pins:
 #      / rusEFI WBO heater white pin 3
 
   - pin: A7
+    meta: MM100_OUT_PWM2
     function: Fuel Pump Relay
     class: outputs
     type: ls
@@ -51,7 +52,12 @@ pins:
 #    function: rusEFI WBO pin 1
 
   - pin: A9
+    meta: MM100_INJ8
+    ts_name: ___ LS2
+    class: outputs
+    type: ls
     function: Idle Air Control Valve
+
   - pin: A10
     function: OEM Engine Mount Control UNUSED
       #/ rusEFI WBO pin 2
@@ -64,8 +70,11 @@ pins:
     function: Radiator Fan Control Module
     class: outputs
     type: ls
+
   - pin: A13
     function: MIL Check Engine Light
+    meta: MM100_INJ7
+    ts_name: ___ LS1
     class: outputs
     type: ls
 

@@ -16,6 +16,10 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->ignitionPins[2] = Gpio::MM100_IGN3;
 	engineConfiguration->ignitionPins[3] = Gpio::MM100_IGN4;
 
+    engineConfiguration->fuelPumpPin = Gpio::MM100_OUT_PWM2;
+    engineConfiguration->idle.solenoidPin = Gpio::MM100_INJ8;
+
+
     engineConfiguration->triggerInputPins[0] = Gpio::MM100_UART8_TX; // VR2 max9924 is the safer default
 
 	engineConfiguration->tps1_1AdcChannel = MM100_IN_TPS_ANALOG;
