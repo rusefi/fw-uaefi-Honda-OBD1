@@ -38,6 +38,9 @@ static Gpio OUTPUTS[] = {
 	Gpio::MM100_INJ8, // A9 IAC
 	Gpio::MM100_INJ7, // A13 MIL
 	Gpio::MM100_IGN7, // A21 ICM Coil Control
+	Gpio::MM100_IGN8, // Radiator Fan Control Module
+	Gpio::MM100_OUT_PWM1, // A/C compressor clutch relay
+	Gpio::MM100_INJ6, // IAB intake manifold butterflies solenoid
 };
 
 int getBoardMetaOutputsCount() {
