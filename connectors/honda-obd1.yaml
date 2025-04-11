@@ -207,7 +207,7 @@ pins:
     function: K-Line UNUSED
 
   - pin: D11
-    function: Throttle Position Sensor
+    function: TPS Throttle Position Sensor
     meta: MM100_IN_TPS_ANALOG
     class: analog_inputs
     ts_name: ___ TPS1
@@ -507,6 +507,9 @@ info:
       y: 376
 
 
+    - pin: D11
+      x: 2712
+      y: 250
     - pin: D13
       x: 2792
       y: 250
