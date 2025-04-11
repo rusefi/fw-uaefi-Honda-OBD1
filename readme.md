@@ -1,1 +1,1 @@
-See https://github.com/rusefi/rusefi/wiki/Custom-Firmware
+https://github.com/rusefi/uaefi-Honda-OBD1
