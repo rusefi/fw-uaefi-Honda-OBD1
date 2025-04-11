@@ -68,6 +68,7 @@ pins:
 
   - pin: A12
     function: Radiator Fan Control Module
+    meta: MM100_IGN8
     class: outputs
     type: ls
 
@@ -83,6 +84,7 @@ pins:
 #      / rusEFI WBO pin 4
   - pin: A15
     function: A/C compressor clutch relay
+    meta: MM100_OUT_PWM1
     class: outputs
     type: ls
 
@@ -90,7 +92,10 @@ pins:
     function: rusEFI Aux Low Side output 1
 
   - pin: A17
+    meta: MM100_INJ6
     function: IAB intake manifold butterflies solenoid
+    class: outputs
+    type: ls
 
   #  - pin: A18
 #    function: rusEFI WBO pin 5
