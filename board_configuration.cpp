@@ -28,3 +28,26 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->iat.adcChannel = MM100_IN_IAT_ANALOG;
 
 }
+
+static Gpio OUTPUTS[] = {
+	Gpio::MM100_MEGA_UAEFI_INJ1, // A1 INJ_1
+	Gpio::MM100_INJ4, // A2 INJ_4
+	Gpio::MM100_INJ2, // A3 INJ_2
+	Gpio::MM100_INJ3, // A5 INJ_3
+	Gpio::MM100_OUT_PWM2, // Fuel Pump Relay
+	Gpio::MM100_INJ8, // A9 IAC
+	Gpio::MM100_INJ7, // A13 MIL
+	Gpio::MM100_IGN7, // A21 ICM Coil Control
+};
+
+int getBoardMetaOutputsCount() {
+    return efi::size(OUTPUTS);
+}
+
+int getBoardMetaLowSideOutputsCount() {
+    return getBoardMetaOutputsCount();
+}
+
+Gpio* getBoardMetaOutputs() {
+    return OUTPUTS;
+}
