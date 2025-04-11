@@ -8,9 +8,12 @@ const char * getBoardSpecificPinName(brain_pin_e brainPin) {
 	switch(brainPin) {
 		case Gpio::A9: return "A3 INJ_2";
 		case Gpio::B9: return "A21 ICM Coil Control";
+		case Gpio::C6: return "Fuel Pump Relay";
 		case Gpio::D0: return "A1 INJ_1";
 		case Gpio::D10: return "A2 INJ_4";
 		case Gpio::D11: return "A5 INJ_3";
+		case Gpio::D12: return "A9 LS2";
+		case Gpio::D15: return "A13 LS1";
 		case Gpio::E0: return "B11 VR1+ Discrete";
 		case Gpio::E1: return "B15 max9924";
 		default: return nullptr;
