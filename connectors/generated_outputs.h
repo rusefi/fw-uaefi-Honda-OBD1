@@ -10,7 +10,10 @@ Gpio GENERATED_OUTPUTS = {
 	Gpio::MM100_INJ3, // A5 INJ_3
 	Gpio::MM100_OUT_PWM2, // Fuel Pump Relay
 	Gpio::MM100_INJ8, // A9 IAC
+	Gpio::MM100_IGN8, // Radiator Fan Control Module
 	Gpio::MM100_INJ7, // A13 MIL
+	Gpio::MM100_OUT_PWM1, // A/C compressor clutch relay
+	Gpio::MM100_INJ6, // IAB intake manifold butterflies solenoid
 	Gpio::MM100_IGN7, // A21 ICM Coil Control
 // "A1 INJ_1",
 // "A2 INJ_4",
@@ -18,6 +21,9 @@ Gpio GENERATED_OUTPUTS = {
 // "A5 INJ_3",
 // "Fuel Pump Relay",
 // "A9 IAC",
+// "Radiator Fan Control Module",
 // "A13 MIL",
+// "A/C compressor clutch relay",
+// "IAB intake manifold butterflies solenoid",
 // "A21 ICM Coil Control",
 }

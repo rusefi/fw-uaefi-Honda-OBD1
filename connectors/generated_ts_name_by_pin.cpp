@@ -6,6 +6,7 @@
 // see comments at declaration in pin_repository.h
 const char * getBoardSpecificPinName(brain_pin_e brainPin) {
 	switch(brainPin) {
+		case Gpio::A8: return "IAB intake manifold butterflies solenoid";
 		case Gpio::A9: return "A3 INJ_2";
 		case Gpio::B9: return "A21 ICM Coil Control";
 		case Gpio::C6: return "Fuel Pump Relay";
@@ -13,9 +14,11 @@ const char * getBoardSpecificPinName(brain_pin_e brainPin) {
 		case Gpio::D10: return "A2 INJ_4";
 		case Gpio::D11: return "A5 INJ_3";
 		case Gpio::D12: return "A9 IAC";
+		case Gpio::D13: return "A/C compressor clutch relay";
 		case Gpio::D15: return "A13 MIL";
 		case Gpio::E0: return "B11 VR1+ Discrete";
 		case Gpio::E1: return "B15 max9924";
+		case Gpio::E6: return "Radiator Fan Control Module";
 		default: return nullptr;
 	}
 	return nullptr;
