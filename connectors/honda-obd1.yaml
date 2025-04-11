@@ -53,7 +53,7 @@ pins:
 
   - pin: A9
     meta: MM100_INJ8
-    ts_name: ___ LS2
+    ts_name: ___ IAC
     class: outputs
     type: ls
     function: Idle Air Control Valve
@@ -74,7 +74,7 @@ pins:
   - pin: A13
     function: MIL Check Engine Light
     meta: MM100_INJ7
-    ts_name: ___ LS1
+    ts_name: ___ MIL
     class: outputs
     type: ls
 

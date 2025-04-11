@@ -11,10 +11,11 @@ void setBoardDefaultConfiguration() {
   	engineConfiguration->injectionPins[2] = Gpio::MM100_INJ3;
   	engineConfiguration->injectionPins[3] = Gpio::MM100_INJ4;
 
-	engineConfiguration->ignitionPins[0] = Gpio::MM100_IGN1;
-	engineConfiguration->ignitionPins[1] = Gpio::MM100_IGN2;
-	engineConfiguration->ignitionPins[2] = Gpio::MM100_IGN3;
-	engineConfiguration->ignitionPins[3] = Gpio::MM100_IGN4;
+    engineConfiguration->ignitionPins[0] = Gpio::MM100_IGN7; // ICM Ignition control module
+//	engineConfiguration->ignitionPins[0] = Gpio::MM100_IGN1;
+//	engineConfiguration->ignitionPins[1] = Gpio::MM100_IGN2;
+//	engineConfiguration->ignitionPins[2] = Gpio::MM100_IGN3;
+//	engineConfiguration->ignitionPins[3] = Gpio::MM100_IGN4;
 
     engineConfiguration->fuelPumpPin = Gpio::MM100_OUT_PWM2;
     engineConfiguration->idle.solenoidPin = Gpio::MM100_INJ8;
