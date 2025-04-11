@@ -9,15 +9,15 @@ Gpio GENERATED_OUTPUTS = {
 	Gpio::MM100_INJ2, // A3 INJ_2
 	Gpio::MM100_INJ3, // A5 INJ_3
 	Gpio::MM100_OUT_PWM2, // Fuel Pump Relay
-	Gpio::MM100_INJ8, // A9 LS2
-	Gpio::MM100_INJ7, // A13 LS1
+	Gpio::MM100_INJ8, // A9 IAC
+	Gpio::MM100_INJ7, // A13 MIL
 	Gpio::MM100_IGN7, // A21 ICM Coil Control
 // "A1 INJ_1",
 // "A2 INJ_4",
 // "A3 INJ_2",
 // "A5 INJ_3",
 // "Fuel Pump Relay",
-// "A9 LS2",
-// "A13 LS1",
+// "A9 IAC",
+// "A13 MIL",
 // "A21 ICM Coil Control",
 }

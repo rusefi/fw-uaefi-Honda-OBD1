@@ -12,8 +12,8 @@ const char * getBoardSpecificPinName(brain_pin_e brainPin) {
 		case Gpio::D0: return "A1 INJ_1";
 		case Gpio::D10: return "A2 INJ_4";
 		case Gpio::D11: return "A5 INJ_3";
-		case Gpio::D12: return "A9 LS2";
-		case Gpio::D15: return "A13 LS1";
+		case Gpio::D12: return "A9 IAC";
+		case Gpio::D15: return "A13 MIL";
 		case Gpio::E0: return "B11 VR1+ Discrete";
 		case Gpio::E1: return "B15 max9924";
 		default: return nullptr;
