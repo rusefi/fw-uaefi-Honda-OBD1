@@ -54,8 +54,8 @@
 #define adc_channel_e_EFI_ADC_ERROR 50
 #define adc_channel_e_EFI_ADC_NONE 0
 #define adc_channel_e_EFI_ADC_TOTAL_CHANNELS 49
-#define adc_channel_e_enum 0="NONE",5="D11 TPS1",13="D13 CLT Coolant",11="MAP"
-#define adc_channel_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","D11 TPS1","INVALID","INVALID","INVALID","INVALID","INVALID","MAP","INVALID","D13 CLT Coolant"
+#define adc_channel_e_enum 0="NONE",5="D11 TPS1",13="D13 CLT Coolant",9="J1_5 TPS2",4="J2_1 PPS1",15="J2_5 PPS2",11="MAP"
+#define adc_channel_e_fullenum "NONE","INVALID","INVALID","INVALID","J2_1 PPS1","D11 TPS1","INVALID","INVALID","INVALID","J1_5 TPS2","INVALID","MAP","INVALID","D13 CLT Coolant","INVALID","J2_5 PPS2"
 #define ADC_CHANNEL_NONE 0
 #define afr_sensor_s_size 20
 #define air_pressure_sensor_config_s_size 12
@@ -1282,8 +1282,8 @@
 #define operation_mode_e_FOUR_STROKE_TWELVE_TIMES_CRANK_SENSOR 6
 #define operation_mode_e_OM_NONE 0
 #define operation_mode_e_TWO_STROKE 3
-#define output_pin_e_enum 0="NONE",63="A/C compressor clutch relay",50="A1 INJ_1",65="A13 MIL",60="A2 INJ_4",27="A21 ICM Coil Control",11="A3 INJ_2",61="A5 INJ_3",62="A9 IAC",40="Fuel Pump Relay",10="IAB intake manifold butterflies solenoid",72="Radiator Fan Control Module"
-#define output_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","IAB intake manifold butterflies solenoid","A3 INJ_2","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","A21 ICM Coil Control","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Fuel Pump Relay","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","A1 INJ_1","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","A2 INJ_4","A5 INJ_3","A9 IAC","A/C compressor clutch relay","INVALID","A13 MIL","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Radiator Fan Control Module"
+#define output_pin_e_enum 0="NONE",63="A/C compressor clutch relay",50="A1 INJ_1",65="A13 MIL",60="A2 INJ_4",27="A21 ICM Coil Control",11="A3 INJ_2",61="A5 INJ_3",62="A9 IAC",47="Coil 1",71="Coil 2",70="Coil 3",69="Coil 4",40="Fuel Pump Relay",10="IAB intake manifold butterflies solenoid",72="Radiator Fan Control Module"
+#define output_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","IAB intake manifold butterflies solenoid","A3 INJ_2","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Coil 1","A21 ICM Coil Control","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Fuel Pump Relay","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Coil 1","INVALID","INVALID","A1 INJ_1","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","A2 INJ_4","A5 INJ_3","A9 IAC","A/C compressor clutch relay","INVALID","A13 MIL","INVALID","INVALID","INVALID","Coil 4","Coil 3","Coil 2","Radiator Fan Control Module"
 #define PACK_ADD_TEMPERATURE 40
 #define PACK_MULT_AFR 1000
 #define PACK_MULT_AFR_CFG 10
@@ -1384,7 +1384,7 @@
 #define SentInput_NONE 0
 #define show_tcu_gauges false
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 2083665445
+#define SIGNATURE_HASH 2379122484
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1883,7 +1883,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2025.04.12.uaefi-obd1.2083665445"
+#define TS_SIGNATURE "rusEFI main.2025.04.12.uaefi-obd1.2379122484"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
