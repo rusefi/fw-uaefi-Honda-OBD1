@@ -122,6 +122,8 @@ pins:
       #/ rusEFI WBO pin 2
   - pin: A11
     function: EGR Solenoid
+    meta: MM100_INJ5
+    ts_name: ___ MIL
     class: outputs
     type: ls
 
