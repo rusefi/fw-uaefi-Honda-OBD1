@@ -1,6 +1,63 @@
 meta: config/boards/hellen_mm100_meta.h
 
 pins:
+  - pin: J2_1
+    class: analog_inputs
+    meta: MM100_IN_PPS_ANALOG
+    ts_name: ___ PPS1
+    function: PPS input 1
+    type: av
+    color: white
+
+  - pin: J2_5
+    class: analog_inputs
+    meta: MM100_IN_AUX2_ANALOG
+    ts_name: ___ PPS2
+    function: PPS input 2
+    type: av
+    color: orange/brown
+
+  - pin: J1_5
+    class: analog_inputs
+    meta: MM100_IN_AUX1_ANALOG
+    ts_name: ___ TPS2
+    function: TPS 2 sensor input
+    type: av
+    color: blue
+
+
+  - pin: J4_5
+    class: outputs
+    meta: MM100_IGN4
+    ts_name: Coil 4
+    function: Coil 4
+    type: ign
+    color: orange
+
+  - pin: J4_6
+    class: outputs
+    meta: MM100_IGN3
+    ts_name: Coil 3
+    function: Coil 3
+    type: ign
+    color: blue
+
+  - pin: J4_7
+    class: outputs
+    meta: MM100_IGN2
+    ts_name: Coil 2
+    function: Coil 2
+    type: ign
+    color: white
+
+  - pin: J4_8
+    class: outputs
+    meta: MM100_IGN1
+    ts_name: Coil 1
+    function: Coil 1
+    type: ign
+    color: green
+
   - pin: A1
     class: outputs
     meta: MM100_MEGA_UAEFI_INJ1
@@ -26,7 +83,10 @@ pins:
     type: inj
 
   - pin: A4
-    function: VTEC Solenoid Valve (wow high side)
+    function: ___ VTEC Solenoid Valve
+    meta: MM100_IGN6
+    ts_name: Coil 1
+    color: green
     class: outputs
     type: hs
 

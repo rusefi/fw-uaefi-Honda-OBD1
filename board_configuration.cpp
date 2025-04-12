@@ -41,6 +41,7 @@ static Gpio OUTPUTS[] = {
 	Gpio::MM100_IGN8, // Radiator Fan Control Module
 	Gpio::MM100_OUT_PWM1, // A/C compressor clutch relay
 	Gpio::MM100_INJ6, // IAB intake manifold butterflies solenoid
+	Gpio::MM100_IGN6, // VTEC Solenoid Valve
 };
 
 int getBoardMetaOutputsCount() {
@@ -48,7 +49,7 @@ int getBoardMetaOutputsCount() {
 }
 
 int getBoardMetaLowSideOutputsCount() {
-    return getBoardMetaOutputsCount();
+    return getBoardMetaOutputsCount() - 1;
 }
 
 Gpio* getBoardMetaOutputs() {
