@@ -291,10 +291,14 @@ pins:
     function: OEM o2 UNUSED / rusEFI Aux Analog Input
 
   - pin: D15
-    function: Intake Sensor
+    function: IAT Intake Sensor
+    class: analog_inputs
+    meta: MM100_IN_IAT_ANALOG
+    ts_name: ___ IAT
+    type: at
 
   - pin: D17
-    function: MAP Sensor
+    function: ___ MAP Sensor
     class: analog_inputs
     meta: MM100_IN_MAP1_ANALOG
     ts_name: MAP
