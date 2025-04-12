@@ -20,14 +20,13 @@ void setBoardDefaultConfiguration() {
     engineConfiguration->fuelPumpPin = Gpio::MM100_OUT_PWM2;
     engineConfiguration->idle.solenoidPin = Gpio::MM100_INJ8;
 
-
     engineConfiguration->triggerInputPins[0] = Gpio::MM100_UART8_TX; // VR2 max9924 is the safer default
+    engineConfiguration->camInputs[0] = Gpio::MM100_UART8_RX; // VR1+ Discrete
 
 	engineConfiguration->tps1_1AdcChannel = MM100_IN_TPS_ANALOG;
 	engineConfiguration->map.sensor.hwChannel = MM100_IN_MAP1_ANALOG;
 	engineConfiguration->clt.adcChannel = MM100_IN_CLT_ANALOG;
 	engineConfiguration->iat.adcChannel = MM100_IN_IAT_ANALOG;
-
 }
 
 static Gpio OUTPUTS[] = {
@@ -44,6 +43,11 @@ static Gpio OUTPUTS[] = {
 	Gpio::MM100_INJ6, // IAB intake manifold butterflies solenoid
 	Gpio::MM100_INJ5, // EGR Solenoid
 	Gpio::MM100_IGN6, // VTEC Solenoid Valve
+// would need connectors
+//	Gpio::MM100_IGN4, // Coil 4
+//	Gpio::MM100_IGN3, // Coil 3
+//	Gpio::MM100_IGN2, // Coil 2
+//	Gpio::MM100_IGN1, // Coil 1
 };
 
 int getBoardMetaOutputsCount() {

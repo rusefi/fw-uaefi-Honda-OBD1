@@ -1,5 +1,34 @@
 ! example of .ini file templating option
 #define ts_show_etb_pins false
+#define ts_show_exhaust_vvt false
+#define ts_show_bank2_cam1 false
+#define ts_show_bank2_cam2 false
+#define ts_show_mc33810 false
+#define ts_show_analog_divider false
+#define ts_show_ford_toyota_tps_pps false
+#define ts_show_odd_fire false
+#define ts_show_vvt_output_pin false
+#define ts_show_vvt_frequency false
+#define ts_show_number_of_cylinders false
+#define ts_show_firing_order false
+
+#define ts_show_cylinder_5 false
+#define ts_show_cylinder_6 false
+#define ts_show_cylinder_7 false
+#define ts_show_cylinder_8 false
+#define ts_show_cylinder_9 false
+#define ts_show_cylinder_10 false
+#define ts_show_cylinder_11 false
+#define ts_show_cylinder_12 false
+
+#define ts_show_fuel_trim_cylinder_5 false
+#define ts_show_fuel_trim_cylinder_6 false
+#define ts_show_fuel_trim_cylinder_7 false
+#define ts_show_fuel_trim_cylinder_8 false
+#define ts_show_fuel_trim_cylinder_9 false
+#define ts_show_fuel_trim_cylinder_10 false
+#define ts_show_fuel_trim_cylinder_11 false
+#define ts_show_fuel_trim_cylinder_12 false
 
 
 ! example of table size override
