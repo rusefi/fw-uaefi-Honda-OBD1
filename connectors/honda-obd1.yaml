@@ -85,7 +85,6 @@ pins:
   - pin: A4
     function: ___ VTEC Solenoid Valve
     meta: MM100_IGN6
-    ts_name: Coil 1
     color: green
     class: outputs
     type: hs
