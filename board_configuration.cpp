@@ -24,6 +24,7 @@ void setBoardDefaultConfiguration() {
     engineConfiguration->triggerInputPins[0] = Gpio::MM100_UART8_TX; // VR2 max9924 is the safer default
 
 	engineConfiguration->tps1_1AdcChannel = MM100_IN_TPS_ANALOG;
+	engineConfiguration->map.sensor.hwChannel = MM100_IN_MAP1_ANALOG;
 	engineConfiguration->clt.adcChannel = MM100_IN_CLT_ANALOG;
 	engineConfiguration->iat.adcChannel = MM100_IN_IAT_ANALOG;
 
