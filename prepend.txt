@@ -11,6 +11,12 @@
 #define ts_show_vvt_frequency false
 #define ts_show_number_of_cylinders false
 #define ts_show_firing_order false
+#define ts_show_sent false
+#define ts_show_vr_threshold_all true
+#define ts_show_vr_threshold_pins false
+#define ts_show_vr_threshold_2 false
+#define ts_show_vbatt false
+#define ts_show_clt_iat_pullup false
 
 #define ts_show_cylinder_5 false
 #define ts_show_cylinder_6 false
