@@ -8,7 +8,7 @@ const char * getBoardSpecificPinName(brain_pin_e brainPin) {
 	switch(brainPin) {
 		case Gpio::A8: return "IAB intake manifold butterflies solenoid";
 		case Gpio::A9: return "A3 INJ_2";
-		case Gpio::B8: return "Coil 1";
+		case Gpio::B8: return "A4 VTEC Solenoid Valve";
 		case Gpio::B9: return "A21 ICM Coil Control";
 		case Gpio::C13: return "Coil 1";
 		case Gpio::C6: return "Fuel Pump Relay";
@@ -18,6 +18,7 @@ const char * getBoardSpecificPinName(brain_pin_e brainPin) {
 		case Gpio::D12: return "A9 IAC";
 		case Gpio::D13: return "A/C compressor clutch relay";
 		case Gpio::D15: return "A13 MIL";
+		case Gpio::D2: return "A11 MIL";
 		case Gpio::E0: return "B11 VR1+ Discrete";
 		case Gpio::E1: return "B15 max9924";
 		case Gpio::E3: return "Coil 4";
