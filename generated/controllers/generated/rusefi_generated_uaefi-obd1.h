@@ -1384,7 +1384,7 @@
 #define SentInput_NONE 0
 #define show_tcu_gauges false
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 1484909357
+#define SIGNATURE_HASH 3316925811
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1744,7 +1744,7 @@
 #define ts_show_cylinder_7 false
 #define ts_show_cylinder_8 false
 #define ts_show_cylinder_9 false
-#define ts_show_cylinder_bank true
+#define ts_show_cylinder_bank false
 #define ts_show_debug_mode false
 #define ts_show_ego2 true
 #define ts_show_egt true
@@ -1790,7 +1790,7 @@
 #define ts_show_globalTriggerAngleOffset true
 #define ts_show_hardware_simulator true
 #define ts_show_hbridge_function true
-#define ts_show_hd true
+#define ts_show_hd false
 #define ts_show_hip9011 false
 #define ts_show_iat true
 #define ts_show_idle_hardware true
@@ -1826,7 +1826,7 @@
 #define ts_show_primary_trigger true
 #define ts_show_reboot_to_dfu true
 #define ts_show_reset_calibrations true
-#define ts_show_rotary true
+#define ts_show_rotary false
 #define ts_show_sd_card true
 #define ts_show_sd_pins true
 #define ts_show_second_bank true
@@ -1884,7 +1884,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2025.04.13.uaefi-obd1.1484909357"
+#define TS_SIGNATURE "rusEFI main.2025.04.13.uaefi-obd1.3316925811"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
