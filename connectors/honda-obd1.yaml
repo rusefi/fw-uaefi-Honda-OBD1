@@ -289,6 +289,10 @@ pins:
 
   - pin: D14
     function: OEM o2 UNUSED / rusEFI Aux Analog Input
+    meta: MM100_IN_O2S2_ANALOG
+    class: analog_inputs
+    ts_name: ___ TPS1
+    type: av
 
   - pin: D15
     function: IAT Intake Sensor
