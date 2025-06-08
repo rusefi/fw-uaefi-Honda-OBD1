@@ -1345,8 +1345,8 @@
 #define operation_mode_e_FOUR_STROKE_TWELVE_TIMES_CRANK_SENSOR 6
 #define operation_mode_e_OM_NONE 0
 #define operation_mode_e_TWO_STROKE 3
-#define output_pin_e_enum 0="NONE",63="A/C compressor clutch relay",50="A1 INJ_1",52="A11 MIL",65="A13 MIL",60="A2 INJ_4",27="A21 ICM Coil Control",11="A3 INJ_2",26="A4 VTEC Solenoid Valve",61="A5 INJ_3",62="A9 IAC",47="Coil 1",71="Coil 2",70="Coil 3",69="Coil 4",40="Fuel Pump Relay",10="IAB intake manifold butterflies solenoid",72="Radiator Fan Control Module"
-#define output_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","IAB intake manifold butterflies solenoid","A3 INJ_2","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","A4 VTEC Solenoid Valve","A21 ICM Coil Control","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Fuel Pump Relay","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Coil 1","INVALID","INVALID","A1 INJ_1","INVALID","A11 MIL","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","A2 INJ_4","A5 INJ_3","A9 IAC","A/C compressor clutch relay","INVALID","A13 MIL","INVALID","INVALID","INVALID","Coil 4","Coil 3","Coil 2","Radiator Fan Control Module"
+#define output_pin_e_enum 0="NONE",63="A/C compressor clutch relay",50="A1 INJ_1",52="A11 MIL",65="A13 MIL",60="A2 INJ_4",27="A21 ICM Coil Control",11="A3 INJ_2",26="A4 VTEC Solenoid Valve",61="A5 INJ_3",62="A9 IAC",47="Coil 1",71="Coil 2",70="Coil 3",69="Coil 4",40="Fuel Pump Relay",10="IAB intake manifold butterflies solenoid",68="J4_4 Aux Tachometer",72="Radiator Fan Control Module"
+#define output_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","IAB intake manifold butterflies solenoid","A3 INJ_2","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","A4 VTEC Solenoid Valve","A21 ICM Coil Control","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Fuel Pump Relay","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Coil 1","INVALID","INVALID","A1 INJ_1","INVALID","A11 MIL","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","A2 INJ_4","A5 INJ_3","A9 IAC","A/C compressor clutch relay","INVALID","A13 MIL","INVALID","INVALID","J4_4 Aux Tachometer","Coil 4","Coil 3","Coil 2","Radiator Fan Control Module"
 #define PACK_ADD_TEMPERATURE 40
 #define PACK_MULT_AFR 1000
 #define PACK_MULT_AFR_CFG 10
@@ -1449,7 +1449,7 @@
 #define SentInput_NONE 0
 #define show_tcu_gauges false
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 3325536509
+#define SIGNATURE_HASH 4252930816
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1986,7 +1986,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2025.06.08.uaefi-obd1.3325536509"
+#define TS_SIGNATURE "rusEFI main.2025.06.08.uaefi-obd1.4252930816"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
