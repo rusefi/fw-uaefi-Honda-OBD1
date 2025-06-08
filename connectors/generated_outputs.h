@@ -16,6 +16,7 @@ Gpio GENERATED_OUTPUTS = {
 	Gpio::MM100_OUT_PWM1, // A/C compressor clutch relay
 	Gpio::MM100_INJ6, // IAB intake manifold butterflies solenoid
 	Gpio::MM100_IGN7, // A21 ICM Coil Control
+	Gpio::MM100_IGN5, // J4_4 Aux Tachometer
 	Gpio::MM100_IGN4, // Coil 4
 	Gpio::MM100_IGN3, // Coil 3
 	Gpio::MM100_IGN2, // Coil 2
@@ -33,6 +34,7 @@ Gpio GENERATED_OUTPUTS = {
 // "A/C compressor clutch relay",
 // "IAB intake manifold butterflies solenoid",
 // "A21 ICM Coil Control",
+// "J4_4 Aux Tachometer",
 // "Coil 4",
 // "Coil 3",
 // "Coil 2",

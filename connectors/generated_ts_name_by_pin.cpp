@@ -23,6 +23,7 @@ const char * getBoardSpecificPinName(brain_pin_e brainPin) {
 		case Gpio::E1: return "B15 max9924";
 		case Gpio::E11: return "C7 - DIGITAL/FLEX";
 		case Gpio::E13: return "Vehicle Speed Sensor";
+		case Gpio::E2: return "J4_4 Aux Tachometer";
 		case Gpio::E3: return "Coil 4";
 		case Gpio::E4: return "Coil 3";
 		case Gpio::E5: return "Coil 2";
