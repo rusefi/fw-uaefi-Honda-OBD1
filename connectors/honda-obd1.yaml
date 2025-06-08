@@ -221,6 +221,8 @@ pins:
     function: Starter Signal +12 when cranking
   - pin: B10
     #Input (grounded 4 times per speedometer cable revolution)
+    meta: MEGA_UAEFI_IN_HALL2
+    class: event_inputs
     function: Vehicle Speed Sensor
   - pin: B11
 # one pulse per cam rev VR discrete
@@ -354,9 +356,10 @@ pins:
     color: black
 
   - pin: C7
+    function: FLEX
     class: event_inputs
+    meta: MM100_IN_VSS
     ts_name: C7 - DIGITAL/FLEX
-    function: DIGITAL
 
   - pin: C8
     ts_name: Aux P17 see schematics
