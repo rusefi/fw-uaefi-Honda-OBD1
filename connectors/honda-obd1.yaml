@@ -26,6 +26,12 @@ pins:
     color: blue
 
 
+  - pin: J4_4
+    function: J4_4 Aux Tachometer
+    meta: MM100_IGN5
+    class: outputs
+    type: hs
+
   - pin: J4_5
     class: outputs
     meta: MM100_IGN4

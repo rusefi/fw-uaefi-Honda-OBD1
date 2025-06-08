@@ -19,6 +19,7 @@ void setBoardDefaultConfiguration() {
 
     engineConfiguration->fuelPumpPin = Gpio::MM100_OUT_PWM2;
     engineConfiguration->idle.solenoidPin = Gpio::MM100_INJ8;
+    engineConfiguration->tachOutputPin = Gpio::MM100_IGN5;
 
     engineConfiguration->triggerInputPins[0] = Gpio::MM100_UART8_TX; // VR2 max9924 is the safer default
     engineConfiguration->camInputs[0] = Gpio::MM100_UART8_RX; // VR1+ Discrete
