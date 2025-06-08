@@ -256,15 +256,18 @@ pins:
 
   - pin: D2
     function: Brake Pedal (+12 when braking)
+    # TODO!
 
   - pin: D3
     function: Knock Sensor
 
   - pin: D4
     function: Diag via MIL Mode Switch (open drain)
+    # TODO?
 
   - pin: D6
     function: VTEC Pressure Switch UNUSED (+12 when something)
+    # TODO?
 
   - pin: D7
     function: K-Line UNUSED
