@@ -3,4 +3,4 @@
 //
 
 #define SIGNATURE_HASH 314768387
-#define TS_SIGNATURE "rusEFI main.2025.06.29.uaefi-obd1.314768387"
+#define TS_SIGNATURE "rusEFI main.2025.06.30.uaefi-obd1.314768387"
