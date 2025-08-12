@@ -1,9 +1,10 @@
 #include "pch.h"
 #include "mega-uaefi.h"
 #include "hellen_meta.h"
+#include "board_overrides.h"
 
 // board-specific configuration setup
-void setBoardDefaultConfiguration() {
+static void customBoardDefaultConfiguration() {
     setMegaUaefiBoardDefaultConfiguration();
 
 	engineConfiguration->injectionPins[0] = Gpio::MM100_MEGA_UAEFI_INJ1;
@@ -61,4 +62,8 @@ int getBoardMetaLowSideOutputsCount() {
 
 Gpio* getBoardMetaOutputs() {
     return OUTPUTS;
+}
+
+void setup_custom_board_overrides() {
+	custom_board_DefaultConfiguration = customBoardDefaultConfiguration;
 }
