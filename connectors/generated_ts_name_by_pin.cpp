@@ -6,28 +6,28 @@
 // see comments at declaration in pin_repository.h
 const char * getBoardSpecificPinName(brain_pin_e brainPin) {
 	switch(brainPin) {
-		case Gpio::A8: return "IAB intake manifold butterflies solenoid";
-		case Gpio::A9: return "A3 INJ_2";
-		case Gpio::B8: return "A4 VTEC Solenoid Valve";
-		case Gpio::B9: return "A21 ICM Coil Control";
-		case Gpio::C13: return "Coil 1";
+		case Gpio::A8: return "A17 IAB output";
+		case Gpio::A9: return "A3 injector out 2";
+		case Gpio::B8: return "A4 VTEC Solenoid output";
+		case Gpio::B9: return "A21 ignition control module Output";
+		case Gpio::C13: return "Ignition Coil 1 output connector J4 pin 8";
 		case Gpio::C6: return "Fuel Pump Relay";
-		case Gpio::D0: return "A1 INJ_1";
-		case Gpio::D10: return "A2 INJ_4";
-		case Gpio::D11: return "A5 INJ_3";
-		case Gpio::D12: return "A9 IAC";
-		case Gpio::D13: return "A/C compressor clutch relay";
-		case Gpio::D15: return "A13 MIL";
-		case Gpio::D2: return "A11 MIL";
-		case Gpio::E0: return "B11 VR1+ Discrete";
-		case Gpio::E1: return "B15 max9924";
-		case Gpio::E11: return "C7 - DIGITAL/FLEX";
-		case Gpio::E13: return "Vehicle Speed Sensor";
-		case Gpio::E2: return "J4_4 Aux Tachometer";
-		case Gpio::E3: return "Coil 4";
-		case Gpio::E4: return "Coil 3";
-		case Gpio::E5: return "Coil 2";
-		case Gpio::E6: return "Radiator Fan Control Module";
+		case Gpio::D0: return "A1 injector out 1";
+		case Gpio::D10: return "A2 injector out 4";
+		case Gpio::D11: return "A5 injector out 3";
+		case Gpio::D12: return "A9 IACV output";
+		case Gpio::D13: return "A15 A/C clutch relay output";
+		case Gpio::D15: return "A13 MIL output";
+		case Gpio::D2: return "A11 EGR solenoid Output";
+		case Gpio::E0: return "B11 Cam sensor input";
+		case Gpio::E1: return "B15 crank sensor input";
+		case Gpio::E11: return "C7 Flex sensor input";
+		case Gpio::E13: return "B10 VSS input";
+		case Gpio::E2: return "tach output connector 4 pin 4";
+		case Gpio::E3: return "Ignition Coil 4 output connector 4 pin 5";
+		case Gpio::E4: return "Ignition Coil 3 output connector 4 pin 6";
+		case Gpio::E5: return "Ignition Coil 2 output connector 4 pin 7";
+		case Gpio::E6: return "A12 Fan relay Output";
 		default: return nullptr;
 	}
 	return nullptr;
