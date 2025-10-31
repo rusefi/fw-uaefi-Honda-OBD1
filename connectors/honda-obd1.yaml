@@ -28,6 +28,7 @@ pins:
 
   - pin: J4_4
     function: J4_4 Aux Tachometer
+    ts_name: tach output connector 4 pin 4
     meta: MM100_IGN5
     class: outputs
     type: hs
@@ -35,7 +36,7 @@ pins:
   - pin: J4_5
     class: outputs
     meta: MM100_IGN4
-    ts_name: Coil 4
+    ts_name: Ignition Coil 4 output connector 4 pin 5
     function: Coil 4
     type: ign
     color: orange
@@ -43,7 +44,7 @@ pins:
   - pin: J4_6
     class: outputs
     meta: MM100_IGN3
-    ts_name: Coil 3
+    ts_name: Ignition Coil 3 output connector 4 pin 6
     function: Coil 3
     type: ign
     color: blue
@@ -51,7 +52,7 @@ pins:
   - pin: J4_7
     class: outputs
     meta: MM100_IGN2
-    ts_name: Coil 2
+    ts_name: Ignition Coil 2 output connector 4 pin 7
     function: Coil 2
     type: ign
     color: white
@@ -59,7 +60,7 @@ pins:
   - pin: J4_8
     class: outputs
     meta: MM100_IGN1
-    ts_name: Coil 1
+    ts_name: Ignition Coil 1 output connector J4 pin 8
     function: Coil 1
     type: ign
     color: green
@@ -67,7 +68,7 @@ pins:
   - pin: A1
     class: outputs
     meta: MM100_MEGA_UAEFI_INJ1
-    ts_name: ___ INJ_1
+    ts_name: ___ injector out 1
     function: Injector 1
     color: green
     type: inj
@@ -75,7 +76,7 @@ pins:
   - pin: A2
     class: outputs
     meta: MM100_INJ4
-    ts_name: ___ INJ_4
+    ts_name: ___ injector out 4
     function: Injector 4
     color: orange/brown
     type: inj
@@ -84,13 +85,14 @@ pins:
     function: Injector 2
     class: outputs
     meta: MM100_INJ2
-    ts_name: ___ INJ_2
+    ts_name: ___ injector out 2
     color: white
     type: inj
 
   - pin: A4
     function: ___ VTEC Solenoid Valve
     meta: MM100_IGN6
+    ts_name: ___ VTEC Solenoid output
     color: green
     class: outputs
     type: hs
@@ -98,7 +100,7 @@ pins:
   - pin: A5
     class: outputs
     meta: MM100_INJ3
-    ts_name: ___ INJ_3
+    ts_name: ___ injector out 3
     function: Injector 3
     color: blue
     type: inj
@@ -118,7 +120,7 @@ pins:
 
   - pin: A9
     meta: MM100_INJ8
-    ts_name: ___ IAC
+    ts_name: ___ IACV output
     class: outputs
     type: ls
     function: Idle Air Control Valve
@@ -129,20 +131,21 @@ pins:
   - pin: A11
     function: EGR Solenoid
     meta: MM100_INJ5
-    ts_name: ___ MIL
+    ts_name: ___ EGR solenoid Output
     class: outputs
     type: ls
 
   - pin: A12
     function: Radiator Fan Control Module
     meta: MM100_IGN8
+    ts_name: ___ Fan relay Output
     class: outputs
     type: ls
 
   - pin: A13
     function: MIL Check Engine Light
     meta: MM100_INJ7
-    ts_name: ___ MIL
+    ts_name: ___ MIL output
     class: outputs
     type: ls
 
@@ -152,6 +155,7 @@ pins:
   - pin: A15
     function: A/C compressor clutch relay
     meta: MM100_OUT_PWM1
+    ts_name: ___ A/C clutch relay output
     class: outputs
     type: ls
 
@@ -162,20 +166,22 @@ pins:
     meta: MM100_INJ6
     function: IAB intake manifold butterflies solenoid
     class: outputs
+    ts_name: ___ IAB output
     type: ls
 
   #  - pin: A18
-#    function: rusEFI WBO pin 5
+  #    function: rusEFI WBO pin 5
 
-#  - pin: A19
-#    function: rusEFI WBO pin 6
+  #  - pin: A19
+  #    function: rusEFI WBO pin 6
 
   - pin: A20
     function: PCS Purge Control Solenoid UNUSED / rusEFI Aux Low Side output 2
+    ts_name: Gas tank purge solenoid
 
   - pin: A21
     function: ICM Coil Control
-    ts_name: ___ ICM Coil Control
+    ts_name: ___ ignition control module Output
     meta: MM100_IGN7
     class: outputs
     type: ls
@@ -197,7 +203,7 @@ pins:
     class: analog_inputs
     color: red
     type: 12v
-    ts_name: ___ Voltage From Key
+    ts_name: ___ ignition switch +12V
 
   - pin: A26
     function: Logic Ground
@@ -205,7 +211,8 @@ pins:
     type: gnd
 
   - pin: B1
-    function: Same as A25 Ignition Switch / Battery Voltage Analog Input
+    function: Ignition Switch / Battery Voltage Analog Input
+    ts_name: ___ ignition switch +12V same as A25
     color: red
   - pin: B2
     function: Logic Ground
@@ -215,9 +222,9 @@ pins:
     function: TCU UNUSED
   - pin: B5
     function: A/C Pressure Switch (open drain)
-#  - pin: B6
-#    function: rusEFI Flex Input
-#    class: event_inputs
+  #  - pin: B6
+  #    function: rusEFI Flex Input
+  #    class: event_inputs
 
   - pin: B7
     function: AT Gear Pos Part UNUSED
@@ -227,16 +234,18 @@ pins:
     function: Starter Signal +12 when cranking
   - pin: B10
     #Input (grounded 4 times per speedometer cable revolution)
-    meta: MEGA_UAEFI_IN_HALL2
+    meta: MM100_IN_D2
     class: event_inputs
     function: Vehicle Speed Sensor
+    ts_name: ___ VSS input
+
   - pin: B11
-# one pulse per cam rev VR discrete
+    # one pulse per cam rev VR discrete
     function: CYP Signal (1 pulse)
     meta: MM100_UART8_RX
     type: hall
     class: event_inputs
-    ts_name: ___ VR1+ Discrete
+    ts_name: ___ Cam sensor input
     color: blue
 
   - pin: B12
@@ -247,11 +256,11 @@ pins:
     function: TDC Ground UNUSED
 
   - pin: B15
-# Input, 24 pulses per cam
+    # Input, 24 pulses per cam
     function: CKP Signal (24 pulses)
     meta: MM100_UART8_TX
     class: event_inputs
-    ts_name: ___ max9924
+    ts_name: ___ crank sensor input
     color: white
 
   - pin: B16
@@ -282,19 +291,20 @@ pins:
     function: TPS Throttle Position Sensor. Same as J1_2
     meta: MM100_IN_TPS_ANALOG
     class: analog_inputs
-    ts_name: ___ TPS1
+    ts_name: ___ TPS1 (same as J1_2pin)
     type: av
     color: green
 
   - pin: D12
     function: OEM Analog Input EGR Lift Sensor / rusEFI Aux Analog Input
+    ts_name: egr position sensor input
     class: analog_inputs
 
   - pin: D13
     function: Coolant Sensor
     class: analog_inputs
     meta: MM100_IN_CLT_ANALOG
-    ts_name: ___ CLT Coolant
+    ts_name: ___ CLT sensor input
     type: at
     color: grey
 
@@ -302,21 +312,21 @@ pins:
     function: OEM o2 UNUSED / rusEFI Aux Analog Input
     meta: MM100_IN_O2S2_ANALOG
     class: analog_inputs
-    ts_name: ___ TPS1
+    ts_name: ___  OEM O2 sensor input
     type: av
 
   - pin: D15
     function: IAT Intake Sensor
     class: analog_inputs
     meta: MM100_IN_IAT_ANALOG
-    ts_name: ___ IAT
+    ts_name: ___ IAT sensor
     type: at
 
   - pin: D17
     function: ___ MAP Sensor
     class: analog_inputs
     meta: MM100_IN_MAP1_ANALOG
-    ts_name: MAP
+    ts_name: ___ Map sensor input
     color: yellow
 
   - pin: D18
@@ -339,7 +349,7 @@ pins:
     function: Sensor ground
 
 
-# AUX plug
+  # AUX plug
   - pin: C1
     function: WBO Heater Power
     color: grey
@@ -368,7 +378,7 @@ pins:
     function: FLEX
     class: event_inputs
     meta: MM100_IN_VSS
-    ts_name: C7 - DIGITAL/FLEX
+    ts_name: ___ Flex sensor input
 
   - pin: C8
     ts_name: Aux P17 see schematics
@@ -494,18 +504,18 @@ info:
       x: 1365
       y: 387
 
-#    - pin: B7
-#      x: 1070
-#      y: 260
-#    - pin: B8
-#      x: 1070
-#      y: 387
-#    - pin: B7
-#      x: 1436
-#      y: 260
-#    - pin: B8
-#      x: 1436
-#      y: 387
+    #    - pin: B7
+    #      x: 1070
+    #      y: 260
+    #    - pin: B8
+    #      x: 1070
+    #      y: 387
+    #    - pin: B7
+    #      x: 1436
+    #      y: 260
+    #    - pin: B8
+    #      x: 1436
+    #      y: 387
     - pin: B9
       x: 1506
       y: 260
@@ -664,7 +674,7 @@ info:
     - pin: 2A
       x: 2616
       y: 352
-      
+
     - pin: 2B
       x: 2616
       y: 544
@@ -672,7 +682,7 @@ info:
     - pin: 2C
       x: 2506
       y: 352
-      
+
     - pin: 2D
       x: 2506
       y: 544
@@ -680,7 +690,7 @@ info:
     - pin: 2E
       x: 2396
       y: 352
-      
+
     - pin: 2F
       x: 2396
       y: 544
@@ -688,7 +698,7 @@ info:
     - pin: 2G
       x: 2286
       y: 352
-      
+
     - pin: 2H
       x: 2286
       y: 544
@@ -696,15 +706,15 @@ info:
     - pin: 2I
       x: 2176
       y: 352
-      
+
     - pin: 2J
       x: 2176
       y: 544
-  
+
     - pin: 2K
       x: 2066
       y: 352
-      
+
     - pin: 2L
       x: 2066
       y: 544
@@ -712,7 +722,7 @@ info:
     - pin: 2M
       x: 1956
       y: 352
-      
+
     - pin: 2N
       x: 1956
       y: 544
@@ -720,9 +730,8 @@ info:
     - pin: 2O
       x: 1846
       y: 352
-      
+
     - pin: 2P
       x: 1846
       y: 544
-
 
