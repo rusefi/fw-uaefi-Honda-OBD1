@@ -1,3 +1,3 @@
-https://github.com/rusefi/rusefi/wiki/uaEFI-Honda-OBD1
+Firmware of single board OBD1 ECU
 
-https://github.com/rusefi/uaefi-Honda-OBD1
+https://github.com/rusefi/rusefi/wiki/uaEFI-Honda-OBD1
