@@ -1,6 +1,14 @@
 meta: config/boards/hellen_mm100_meta.h
 
 pins:
+  - pin: J1_5
+    class: analog_inputs
+    meta: MM100_IN_AUX1_ANALOG
+    ts_name: ___ TPS2
+    function: TPS 2 sensor input
+    type: av
+    color: blue
+
   - pin: J2_1
     class: analog_inputs
     meta: MM100_IN_PPS_ANALOG
@@ -16,14 +24,6 @@ pins:
     function: PPS input 2
     type: av
     color: orange/brown
-
-  - pin: J1_5
-    class: analog_inputs
-    meta: MM100_IN_AUX1_ANALOG
-    ts_name: ___ TPS2
-    function: TPS 2 sensor input
-    type: av
-    color: blue
 
 
   - pin: J4_4
