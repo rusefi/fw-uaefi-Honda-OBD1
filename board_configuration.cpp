@@ -13,10 +13,6 @@ static void customBoardDefaultConfiguration() {
   	engineConfiguration->injectionPins[3] = Gpio::MM100_INJ4;
 
     engineConfiguration->ignitionPins[0] = Gpio::MM100_IGN7; // ICM Ignition control module
-//	engineConfiguration->ignitionPins[0] = Gpio::MM100_IGN1;
-//	engineConfiguration->ignitionPins[1] = Gpio::MM100_IGN2;
-//	engineConfiguration->ignitionPins[2] = Gpio::MM100_IGN3;
-//	engineConfiguration->ignitionPins[3] = Gpio::MM100_IGN4;
 
     engineConfiguration->fuelPumpPin = Gpio::MM100_OUT_PWM2;
     engineConfiguration->idle.solenoidPin = Gpio::MM100_INJ8;
@@ -45,11 +41,11 @@ static Gpio OUTPUTS[] = {
 	Gpio::MM100_INJ6, // IAB intake manifold butterflies solenoid
 	Gpio::MM100_INJ5, // EGR Solenoid
 	Gpio::MM100_IGN6, // VTEC Solenoid Valve
-// would need connectors
-//	Gpio::MM100_IGN4, // Coil 4
-//	Gpio::MM100_IGN3, // Coil 3
-//	Gpio::MM100_IGN2, // Coil 2
-//	Gpio::MM100_IGN1, // Coil 1
+// would need mating connectors added to HW QC harness
+//	Gpio::MM100_IGN4, // J4 Coil 4
+//	Gpio::MM100_IGN3, // J4 Coil 3
+//	Gpio::MM100_IGN2, // J4 Coil 2
+//	Gpio::MM100_IGN1, // J4 Coil 1
 };
 
 int getBoardMetaOutputsCount() {
