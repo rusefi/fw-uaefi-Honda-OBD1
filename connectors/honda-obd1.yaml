@@ -391,7 +391,7 @@ pins:
 
 info:
   title: uaefi-OBD1
-  board_url: https://rusefi.com/s/uaefi-h-obd1
+  board_url: https://wiki.rusefi.com/uaEFI-Honda-OBD1
   cid: main
   directory: uaefi-OBD1
   image:
