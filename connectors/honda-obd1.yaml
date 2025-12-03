@@ -65,6 +65,18 @@ pins:
     type: ign
     color: green
 
+  - pin: J5_2
+    type: hall
+    class: [switch_inputs, event_inputs]
+    ts_name: Aux Hall Crank input
+    id: [MM100_IN_D3, MM100_IN_D3]
+
+  - pin: J5_5
+    type: hall
+    class: [switch_inputs, event_inputs]
+    ts_name: Aux Hall Cam input
+    id: [MM100_IN_D1, MM100_IN_D1]
+
   - pin: A1
     class: outputs
     meta: MM100_MEGA_UAEFI_INJ1
@@ -201,6 +213,7 @@ pins:
   - pin: A25
     function: Ignition Switch / Battery Voltage Analog Input
     class: analog_inputs
+    meta: MM100_IN_VBATT
     color: red
     type: 12v
     ts_name: ___ ignition switch +12V
@@ -298,7 +311,8 @@ pins:
   - pin: D12
     function: OEM Analog Input EGR Lift Sensor / rusEFI Aux Analog Input
     ts_name: egr position sensor input
-    class: analog_inputs
+    class: [analog_inputs, switch_inputs]
+    id: [MM100_IN_O2S_ANALOG, MM100_IN_O2S]
 
   - pin: D13
     function: Coolant Sensor
@@ -310,8 +324,8 @@ pins:
 
   - pin: D14
     function: OEM o2 UNUSED / rusEFI Aux Analog Input
-    meta: MM100_IN_O2S2_ANALOG
-    class: analog_inputs
+    id: [MM100_IN_O2S2_ANALOG, MM100_IN_O2S2]
+    class: [analog_inputs, switch_inputs]
     ts_name: ___  OEM O2 sensor input
     type: av
 
