@@ -58,8 +58,8 @@
 #define adc_channel_e_EFI_ADC_ERROR 50
 #define adc_channel_e_EFI_ADC_NONE 0
 #define adc_channel_e_EFI_ADC_TOTAL_CHANNELS 49
-#define adc_channel_e_enum 0="NONE",6="A25 ignition switch +12V",5="D11 TPS1 (same as J1_2pin)",13="D13 CLT sensor input",2="D14  OEM O2 sensor input",14="D15 IAT sensor",11="D17 Map sensor input",9="J1_5 TPS2",4="J2_1 PPS1",15="J2_5 PPS2",1="egr position sensor input"
-#define adc_channel_e_fullenum "NONE","egr position sensor input","D14  OEM O2 sensor input","INVALID","J2_1 PPS1","D11 TPS1 (same as J1_2pin)","A25 ignition switch +12V","INVALID","INVALID","J1_5 TPS2","INVALID","D17 Map sensor input","INVALID","D13 CLT sensor input","D15 IAT sensor","J2_5 PPS2"
+#define adc_channel_e_enum 0="NONE",6="A25 ignition switch +12V",5="D11 TPS1 (same as J1_2pin)",13="D13 CLT sensor input",2="D14  OEM O2 sensor input",14="D15 IAT sensor",11="D17 Map sensor input",9="J1_5 TPS2",4="J2_2 PPS1",15="J2_5 PPS2",1="egr position sensor input"
+#define adc_channel_e_fullenum "NONE","egr position sensor input","D14  OEM O2 sensor input","INVALID","J2_2 PPS1","D11 TPS1 (same as J1_2pin)","A25 ignition switch +12V","INVALID","INVALID","J1_5 TPS2","INVALID","D17 Map sensor input","INVALID","D13 CLT sensor input","D15 IAT sensor","J2_5 PPS2"
 #define ADC_CHANNEL_NONE 0
 #define afr_sensor_s_size 20
 #define air_pressure_sensor_config_s_size 12
@@ -1436,8 +1436,8 @@
 #define operation_mode_e_FOUR_STROKE_TWELVE_TIMES_CRANK_SENSOR 6
 #define operation_mode_e_OM_NONE 0
 #define operation_mode_e_TWO_STROKE 3
-#define output_pin_e_enum 0="NONE",50="A1 injector out 1",52="A11 EGR solenoid Output",72="A12 Fan relay Output",65="A13 MIL output",63="A15 A/C clutch relay output",10="A17 IAB output",60="A2 injector out 4",27="A21 ignition control module Output",11="A3 injector out 2",26="A4 VTEC Solenoid output",61="A5 injector out 3",62="A9 IACV output",40="Fuel Pump Relay",47="Ignition Coil 1 output connector J4 pin 8",71="Ignition Coil 2 output connector 4 pin 7",70="Ignition Coil 3 output connector 4 pin 6",69="Ignition Coil 4 output connector 4 pin 5",68="tach output connector 4 pin 4"
-#define output_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","A17 IAB output","A3 injector out 2","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","A4 VTEC Solenoid output","A21 ignition control module Output","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Fuel Pump Relay","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Ignition Coil 1 output connector J4 pin 8","INVALID","INVALID","A1 injector out 1","INVALID","A11 EGR solenoid Output","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","A2 injector out 4","A5 injector out 3","A9 IACV output","A15 A/C clutch relay output","INVALID","A13 MIL output","INVALID","INVALID","tach output connector 4 pin 4","Ignition Coil 4 output connector 4 pin 5","Ignition Coil 3 output connector 4 pin 6","Ignition Coil 2 output connector 4 pin 7","A12 Fan relay Output"
+#define output_pin_e_enum 0="NONE",50="A1 injector out 1",52="A11 EGR solenoid Output",72="A12 Fan relay Output",65="A13 MIL output",63="A15 A/C clutch relay output",10="A17 IAB output",60="A2 injector out 4",27="A21 ignition control module Output",11="A3 injector out 2",26="A4 VTEC Solenoid output",61="A5 injector out 3",62="A9 IACV output",40="Fuel Pump Relay",47="Ignition Coil 1 output connector J4 pin 8",71="Ignition Coil 2 output connector 4 pin 7",70="Ignition Coil 3 output connector 4 pin 6",69="Ignition Coil 4 output connector 4 pin 5",57="J3_1 - LED Green",74="J3_4 - LED Yellow",68="tach output connector 4 pin 4"
+#define output_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","A17 IAB output","A3 injector out 2","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","A4 VTEC Solenoid output","A21 ignition control module Output","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Fuel Pump Relay","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Ignition Coil 1 output connector J4 pin 8","INVALID","INVALID","A1 injector out 1","INVALID","A11 EGR solenoid Output","INVALID","INVALID","INVALID","INVALID","J3_1 - LED Green","INVALID","INVALID","A2 injector out 4","A5 injector out 3","A9 IACV output","A15 A/C clutch relay output","INVALID","A13 MIL output","INVALID","INVALID","tach output connector 4 pin 4","Ignition Coil 4 output connector 4 pin 5","Ignition Coil 3 output connector 4 pin 6","Ignition Coil 2 output connector 4 pin 7","A12 Fan relay Output","INVALID","J3_4 - LED Yellow"
 #define PACK_ADD_TEMPERATURE 40
 #define PACK_MULT_AFR 1000
 #define PACK_MULT_AFR_CFG 10
@@ -1544,7 +1544,7 @@
 #define SentInput_NONE 0
 #define show_tcu_gauges false
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 3250236187
+#define SIGNATURE_HASH 2812728602
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -2133,7 +2133,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2025.12.04.uaefi-obd1.3250236187"
+#define TS_SIGNATURE "rusEFI main.2025.12.04.uaefi-obd1.2812728602"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_TEST_COMMAND 't'
