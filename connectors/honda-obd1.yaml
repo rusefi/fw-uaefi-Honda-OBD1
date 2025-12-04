@@ -1,6 +1,27 @@
 meta: config/boards/hellen_mm100_meta.h
 
 pins:
+  # ================== HONDA OBD1 ADAPTER J1 CONNECTOR - TPS + ETB (6 pins) ==================
+  # 43045-0612 connector (2x3 pins)
+  - pin: J1_1
+    class: outputs
+    ts_name: J1_1 - ETB Motor+
+    function: Electronic Throttle Body Motor 1 Positive
+    type: etb
+    color: blue
+
+  - pin: J1_3
+    function: +5V Sensor Reference
+    type: 5v
+    color: red
+
+  - pin: J1_4
+    class: outputs
+    ts_name: J1_4 - ETB Motor-
+    function: Electronic Throttle Body Motor 1 Negative
+    type: etb
+    color: white
+
   - pin: J1_5
     class: analog_inputs
     meta: MM100_IN_AUX1_ANALOG
@@ -9,13 +30,35 @@ pins:
     type: av
     color: blue
 
+  - pin: J1_6
+    function: Sensor Ground
+    type: gnd
+    color: black
+
+  # ================== HONDA OBD1 ADAPTER J2 CONNECTOR - PPS SENSORS (6 pins) ==================
+  # 43045-0612 connector (2x3 pins)
   - pin: J2_1
+    function: Sensor Ground
+    type: gnd
+    color: black
+
+  - pin: J2_2
     class: analog_inputs
     meta: MM100_IN_PPS_ANALOG
     ts_name: ___ PPS1
     function: PPS input 1
     type: av
     color: white
+
+  - pin: J2_3
+    function: +5V Sensor Reference
+    type: 5v
+    color: red
+
+  - pin: J2_4
+    function: Sensor Ground
+    type: gnd
+    color: black
 
   - pin: J2_5
     class: analog_inputs
@@ -25,6 +68,63 @@ pins:
     type: av
     color: orange/brown
 
+  - pin: J2_6
+    function: +5V Sensor Reference
+    type: 5v
+    color: red
+
+  # ================== HONDA OBD1 ADAPTER J3 CONNECTOR - CAN BUS & SERIAL (6 pins) ==================
+  # 43045-0612 connector (2x3 pins)
+  - pin: J3_1
+    class: outputs
+    meta: MM100_LED2_GREEN
+    ts_name: J3_1 - LED Green
+    function: LED Green
+    color: green
+
+  - pin: J3_2
+    meta: MM100_UART2_RX
+    ts_name: J3_2 - UART2 Rx
+    function: UART2 Rx (PD6)
+
+  - pin: J3_3
+    ts_name: J3_3 - CAN High
+    function: CAN High
+    type: can
+    color: green
+
+  - pin: J3_4
+    class: outputs
+    meta: MM100_LED4_YELLOW
+    ts_name: J3_4 - LED Yellow
+    function: LED Yellow
+    color: yellow
+
+  - pin: J3_5
+    meta: MM100_UART2_TX
+    ts_name: J3_5 - UART2 Tx
+    function: UART2 Tx (PD5)
+
+  - pin: J3_6
+    ts_name: J3_6 - CAN Low
+    function: CAN Low
+    type: can
+    color: blue
+
+  # ================== HONDA OBD1 ADAPTER J4 CONNECTOR - IGNITION COILS (8 pins) ==================
+  # 43045-0812 connector (2x4 pins)
+  - pin: J4_1
+    function: Power Ground
+    type: gnd
+    color: black
+
+  - pin: J4_2
+    function: +12V Protected
+    type: 12v
+    color: red
+
+  - pin: J4_3
+    function: Unused
 
   - pin: J4_4
     function: J4_4 Aux Tachometer
@@ -65,6 +165,13 @@ pins:
     type: ign
     color: green
 
+  # ================== HONDA OBD1 ADAPTER J5 CONNECTOR - HALL SENSORS (6 pins) ==================
+  # 43045-0612 connector (2x3 pins)
+  - pin: J5_1
+    function: Sensor Ground
+    type: gnd
+    color: black
+
   - pin: J5_2
     type: hall
     class: [switch_inputs, event_inputs]
@@ -77,6 +184,8 @@ pins:
     ts_name: Aux Hall Cam input
     id: [MM100_IN_D1, MM100_IN_D1]
 
+
+  # ================== OBD1 CONNECTOR A - OUTPUTS & CONTROL (26 pins) ==================
   - pin: A1
     class: outputs
     meta: MM100_MEGA_UAEFI_INJ1
