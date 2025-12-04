@@ -16,6 +16,8 @@ Gpio GENERATED_OUTPUTS = {
 	Gpio::MM100_OUT_PWM1, // A15 A/C clutch relay output
 	Gpio::MM100_INJ6, // A17 IAB output
 	Gpio::MM100_IGN7, // A21 ignition control module Output
+	Gpio::MM100_LED2_GREEN, // J3_1 - LED Green
+	Gpio::MM100_LED4_YELLOW, // J3_4 - LED Yellow
 	Gpio::MM100_IGN5, // tach output connector 4 pin 4
 	Gpio::MM100_IGN4, // Ignition Coil 4 output connector 4 pin 5
 	Gpio::MM100_IGN3, // Ignition Coil 3 output connector 4 pin 6
@@ -34,6 +36,8 @@ Gpio GENERATED_OUTPUTS = {
 // "A15 A/C clutch relay output",
 // "A17 IAB output",
 // "A21 ignition control module Output",
+// "J3_1 - LED Green",
+// "J3_4 - LED Yellow",
 // "tach output connector 4 pin 4",
 // "Ignition Coil 4 output connector 4 pin 5",
 // "Ignition Coil 3 output connector 4 pin 6",

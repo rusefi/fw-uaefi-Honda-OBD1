@@ -21,6 +21,7 @@ const char * getBoardSpecificPinName(brain_pin_e brainPin) {
 		case Gpio::D13: return "A15 A/C clutch relay output";
 		case Gpio::D15: return "A13 MIL output";
 		case Gpio::D2: return "A11 EGR solenoid Output";
+		case Gpio::D7: return "J3_1 - LED Green";
 		case Gpio::E0: return "B11 Cam sensor input";
 		case Gpio::E1: return "B15 crank sensor input";
 		case Gpio::E11: return "C7 Flex sensor input";
@@ -32,6 +33,7 @@ const char * getBoardSpecificPinName(brain_pin_e brainPin) {
 		case Gpio::E4: return "Ignition Coil 3 output connector 4 pin 6";
 		case Gpio::E5: return "Ignition Coil 2 output connector 4 pin 7";
 		case Gpio::E6: return "A12 Fan relay Output";
+		case Gpio::E8: return "J3_4 - LED Yellow";
 		default: return nullptr;
 	}
 	return nullptr;
