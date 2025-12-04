@@ -6,6 +6,8 @@
 // see comments at declaration in pin_repository.h
 const char * getBoardSpecificPinName(brain_pin_e brainPin) {
 	switch(brainPin) {
+		case Gpio::A0: return "egr position sensor input";
+		case Gpio::A1: return "D14  OEM O2 sensor input";
 		case Gpio::A8: return "A17 IAB output";
 		case Gpio::A9: return "A3 injector out 2";
 		case Gpio::B8: return "A4 VTEC Solenoid output";
@@ -22,7 +24,9 @@ const char * getBoardSpecificPinName(brain_pin_e brainPin) {
 		case Gpio::E0: return "B11 Cam sensor input";
 		case Gpio::E1: return "B15 crank sensor input";
 		case Gpio::E11: return "C7 Flex sensor input";
+		case Gpio::E12: return "Aux Hall Cam input";
 		case Gpio::E13: return "B10 VSS input";
+		case Gpio::E14: return "Aux Hall Crank input";
 		case Gpio::E2: return "tach output connector 4 pin 4";
 		case Gpio::E3: return "Ignition Coil 4 output connector 4 pin 5";
 		case Gpio::E4: return "Ignition Coil 3 output connector 4 pin 6";
