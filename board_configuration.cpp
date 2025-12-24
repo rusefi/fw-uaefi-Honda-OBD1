@@ -2,6 +2,9 @@
 #include "mega-uaefi.h"
 #include "hellen_meta.h"
 #include "board_overrides.h"
+#include "hellen_mm100_meta.h"
+
+#include "hellen_leds_100.cpp"
 
 // board-specific configuration setup
 static void customBoardDefaultConfiguration() {
