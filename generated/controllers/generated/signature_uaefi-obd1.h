@@ -2,5 +2,5 @@
 // CHeaderConsumer was generated automatically by rusEFI tool config_definition-all.jar based on gen_config.sh by SignatureConsumer
 //
 
-#define SIGNATURE_HASH 146950832
-#define TS_SIGNATURE "rusEFI main.2026.01.24.uaefi-obd1.146950832"
+#define SIGNATURE_HASH 2339990336
+#define TS_SIGNATURE "rusEFI main.2026.01.25.uaefi-obd1.2339990336"
