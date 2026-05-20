@@ -8,7 +8,7 @@
 
 // board-specific configuration setup
 static void customBoardDefaultConfiguration() {
-    setMegaUaefiBoardDefaultConfiguration();
+    setUaefiBoardDefaultConfiguration();
 
 	engineConfiguration->injectionPins[0] = Gpio::MM100_MEGA_UAEFI_INJ1;
   	engineConfiguration->injectionPins[1] = Gpio::MM100_INJ2;
