@@ -63,7 +63,21 @@ Gpio* getBoardMetaOutputs() {
     return OUTPUTS;
 }
 
+static bool customBoardValidateConfig() {
+    if (engineConfiguration->trigger.type == trigger_type_e::TT_TOOTHED_WHEEL
+	    && engineConfiguration->trigger.customTotalToothCount == 24
+	    && engineConfiguration->trigger.customSkippedToothCount == 0) {
+    } {
+        criticalError("Bad trigger configuration. Please read FAQ");
+        return false;
+    }
+
+  return true;
+}
+
 void setup_custom_board_overrides() {
+    custom_board_validateConfig = customBoardValidateConfig;
+
 	custom_board_DefaultConfiguration = customBoardDefaultConfiguration;
 	custom_board_ConfigOverrides = setMegaUaefiBoardConfigOverrides;
 }
