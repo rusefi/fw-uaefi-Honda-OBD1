@@ -67,7 +67,6 @@ static bool customBoardValidateConfig() {
     if (engineConfiguration->trigger.type == trigger_type_e::TT_TOOTHED_WHEEL
 	    && engineConfiguration->trigger.customTotalToothCount == 24
 	    && engineConfiguration->trigger.customSkippedToothCount == 0) {
-    } {
         criticalError("Bad trigger configuration. Please read FAQ");
         return false;
     }
