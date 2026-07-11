@@ -10,6 +10,8 @@ This board is itself derived from the uaEFI121 board
 # Documentation & Schematics
 
 * Board schematics PDF is in the [docs](docs/) folder: `docs/uaefi-Honda-OBD1-e-schematic.pdf`
+* [docs/schematic-notes.md](docs/schematic-notes.md) — text extraction of the schematic:
+  which pages matter for firmware, full pin-mapping tables, populate-options
 * `docs/vato/CurrentTune.msq` — a known-good reference tune
 * Wiki page: https://wiki.rusefi.com/uaEFI-Honda-OBD1
 
