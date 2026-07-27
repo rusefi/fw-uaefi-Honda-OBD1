@@ -63,7 +63,7 @@ Gpio* getBoardMetaOutputs() {
     return OUTPUTS;
 }
 
-static bool customBoardValidateConfig() {
+static bool customBoardValidateConfig(const engine_configuration_s* /*previousConfiguration*/) {
     if (engineConfiguration->trigger.type == trigger_type_e::TT_TOOTHED_WHEEL
 	    && engineConfiguration->trigger.customTotalToothCount == 24
 	    && engineConfiguration->trigger.customSkippedToothCount == 0) {
