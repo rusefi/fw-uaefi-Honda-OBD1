@@ -2288,7 +2288,7 @@
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
 #define ts_show_wbo_canbus_set_type false
-#define TS_SIGNATURE "rusEFI main.2026.08.23.uaefi-obd1.2828176396"
+#define TS_SIGNATURE "rusEFI main.2026.08.24.uaefi-obd1.2828176396"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_TEST_COMMAND 't'
