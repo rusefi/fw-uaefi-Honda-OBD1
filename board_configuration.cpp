@@ -51,15 +51,15 @@ static Gpio OUTPUTS[] = {
 //	Gpio::MM100_IGN1, // J4 Coil 1
 };
 
-int getBoardMetaOutputsCount() {
+static int boardGetMetaOutputsCount() {
     return efi::size(OUTPUTS);
 }
 
-int getBoardMetaLowSideOutputsCount() {
-    return getBoardMetaOutputsCount() - 1;
+static int boardGetMetaLowSideOutputsCount() {
+    return boardGetMetaOutputsCount() - 1;
 }
 
-Gpio* getBoardMetaOutputs() {
+static Gpio* boardGetMetaOutputs() {
     return OUTPUTS;
 }
 
@@ -75,6 +75,10 @@ static bool customBoardValidateConfig(const engine_configuration_s* /*previousCo
 }
 
 void setup_custom_board_overrides() {
+    custom_board_getMetaOutputsCount = boardGetMetaOutputsCount;
+    custom_board_getMetaLowSideOutputsCount = boardGetMetaLowSideOutputsCount;
+    custom_board_getMetaOutputs = boardGetMetaOutputs;
+
     custom_board_validateConfig = customBoardValidateConfig;
 
 	custom_board_DefaultConfiguration = customBoardDefaultConfiguration;

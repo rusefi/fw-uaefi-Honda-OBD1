@@ -36,7 +36,7 @@ C++ code (pin defaults, validation, knock hardware), and code generation inputs
 ## C++ files
 
 * `board_configuration.cpp` — the heart of board customization. Its entry point
-  `setup_custom_board_overrides()` installs three hooks into the rusEFI core:
+  `setup_custom_board_overrides()` installs configuration and hardware QC hooks into the rusEFI core:
   * `custom_board_DefaultConfiguration` → `customBoardDefaultConfiguration()`: starts from the
     parent board defaults (`setUaefiBoardDefaultConfiguration()`), then assigns Honda-OBD1
     pin mapping — injector pins, ICM ignition output, fuel pump, IACV, tach, VR crank/cam
@@ -47,9 +47,11 @@ C++ code (pin defaults, validation, knock hardware), and code generation inputs
     checks; here it rejects a known-bad 24/0 toothed-wheel trigger configuration with a
     critical error.
 
-  The file also defines the `OUTPUTS[]` table (`getBoardMetaOutputs()` /
-  `getBoardMetaOutputsCount()` / `getBoardMetaLowSideOutputsCount()`) used by hardware QC /
-  board self-test to enumerate every physical output with its connector pin.
+  The file also defines the `OUTPUTS[]` table used by hardware QC / board self-test.
+  Static `boardGetMeta*()` callbacks expose its 13 outputs and 12 low-side outputs
+  through `custom_board_getMetaOutputs`, `custom_board_getMetaOutputsCount`, and
+  `custom_board_getMetaLowSideOutputsCount`. Upstream owns the public
+  `getBoardMeta*()` functions.
 * `default_tune.cpp` — `boardTuneDefaults()` sets tune values baked into the default
   calibration (e.g. `displacement = 1.6` for the D16 engine).
 * `knock_config.h` — knock sensing hardware description: which ADC (`ADCD3`), which
