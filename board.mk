@@ -8,6 +8,9 @@ BOARDINC += $(BOARD_DIR)/generated/controllers/generated \
 
 DDEFS += -DDEFAULT_ENGINE_TYPE=engine_type_e::HONDA_OBD1
 
+# Save flash space by using the INI from the firmware bundle.
+DDEFS += -DEFI_EMBED_INI_MSD=FALSE
+
 # defines SHORT_BOARD_NAME
 include $(BOARD_DIR)/meta-info.env
 
