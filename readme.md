@@ -29,6 +29,9 @@ C++ code (pin defaults, validation, knock hardware), and code generation inputs
   * adds `board_configuration.cpp` and the parent board's `mega-uaefi.cpp` to the build (`BOARDCPPSRC`)
   * adds include paths for `generated/` headers and the parent uaefi121 board (`BOARDINC`)
   * sets the default engine type: `-DDEFAULT_ENGINE_TYPE=engine_type_e::HONDA_OBD1`
+  * disables background DTC tooth recording to leave RAM for Lua on F407;
+    manual tooth logging remains available through the shared BigBuffer, while
+    automatic pre-fault tooth captures are unavailable
   * chains into the parent board's `mega-uaefi.mk`
 * `board_unit_tests.mk` — adds board-specific unit tests (`tests/test_example.cpp`) to the
   rusEFI unit test suite.
@@ -112,3 +115,7 @@ C++ code (pin defaults, validation, knock hardware), and code generation inputs
 
 * `tests/test_example.cpp` — board-specific GoogleTest cases, wired in via
   `board_unit_tests.mk` and run by `_compile_unit_tests.sh`.
+* `python3 tests/test_lua_heap_budget.py` — after building firmware, checks that
+  the linked image leaves at least 24 KiB across the common and CCM heaps. It
+  excludes optional F42x SRAM3, so an F407 must fit too. This guards the static
+  RAM budget; script-specific runtime memory use still needs ECU validation.
